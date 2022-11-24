@@ -13,7 +13,6 @@ body {
     border-radius: 20px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
-
 }
 
 .cardcontainer img {
@@ -22,15 +21,22 @@ body {
     object-fit: cover;
 }
 
+.card-overlay {
+    position: absolute;
+    background: black;
+    width: 330px;
+    height: 500px;
+    opacity: 0;
+}
+
 .cardcontainer:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 40px -4px rgb(0 0 0 / 70%);
 }
 
-.mainimage :hover {
-    filter: brightness(80%)
+.card-overlay:hover {
+    opacity: 0.3;
 }
-
 
 .cardcontainer:hover .card-info {
     transform: translateY(0px);

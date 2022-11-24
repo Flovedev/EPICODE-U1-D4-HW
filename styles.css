@@ -44,7 +44,7 @@ body {
 }
 
 .cardcontainer:hover .save {
-    transform: translateY(0px);
+    transform: translateX(0px);
     transition: transform 0.3s, opacity 0.2s;
 }
 
@@ -133,7 +133,7 @@ body {
     font-size: 20px;
     border-radius: 30px;
     cursor: pointer;
-    transform: translatey(-90px);
+    transform: translatex(110px);
     transform: 0.3s;
 }
 
